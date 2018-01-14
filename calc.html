@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+ <head>
+ <title>Kалькулятор</title>
+ <link rel="stylesheet" type="text/css" href="css/calc.css"/>
+ <script type="text/javascript" src="js/calc.js"></script>
+<script src="/js/calc.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+ </head>
+ <BODY>
+   <ul id="nav7">
+  <li><a href="index.html">Главная страница</a>
+  <li><a href="#2">Работы</a>
+      <ul>
+        <li><a href="picture.html">Работа с картинками</a>
+        <li><a href="move_ball.html">Движущийся мяч</a>
+        <li><a href="calc.html">Калькулятор</a>
+      </ul>
+  <li><a href="#3">Контакты</a>
+      <ul>
+        <li><a href="#3-1">Телефон: 89514700303 </a>
+        <li><a href="#3-2">e-mail: palama2008@rambler.ru</a>
+      </ul>
+  <li class="right"><a href="inform_me.html">Обо мне</a>
+    
+</ul>
+ <h1>Kалькулятор</h1>
+<form name = "form2">
+<table>
+<tr>
+<td colspan = "4"><input TYPE="TEXT" LENGTH="50" size = "25px" NAME="labl" disabled style ="font-size:20px"></td>
+</tr>
+<tr>
+<td><input class = "button1" TYPE="BUTTON" VALUE="7" onClick="number_7();"></td>
+<td><input class = "button1" TYPE="BUTTON" VALUE="8" onClick="number_8();"></td>
+<td><input class = "button1" TYPE="BUTTON" VALUE="9" onClick="number_9();"></td>
+<td><input class = "button1" TYPE="BUTTON" VALUE="*" onClick="multi();"></td>
+</tr>
+<tr>
+<td><input class = "button1" TYPE="BUTTON" VALUE="4" onClick="number_4();"></td>
+<td><input class = "button1" TYPE="BUTTON" VALUE="5" onClick="number_5();"></td>
+<td><input class = "button1" TYPE="BUTTON" VALUE="6" onClick="number_6();"></td>
+<td><input class = "button1" TYPE="BUTTON" VALUE="/" onClick="segment();"></td>
+</tr>
+<tr>
+<td><input class = "button1" TYPE="BUTTON" VALUE="1" onClick="number_1();"></td>
+<td><input class = "button1" TYPE="BUTTON" VALUE="2" onClick="number_2();"></td>
+<td><input class = "button1" TYPE="BUTTON" VALUE="3" onClick="number_3();"></td>
+<td><input class = "button1" TYPE="BUTTON" VALUE="+" onClick="add();"></td>
+</tr>
+<tr>
+
+<td ><input class = "button1" TYPE="BUTTON" VALUE="0" onClick="number_0();"></td>
+<td ><input class = "button1" TYPE="BUTTON" VALUE="&plusmn;" onClick="plusmn();"></td>
+<td ><input class = "button1" TYPE="BUTTON" VALUE="." onClick="decimal();"></td>
+<td><input class = "button1" TYPE="BUTTON" VALUE="-" onClick="subtraction();"></td>
+</tr>
+<tr>
+<td  colspan = "2"><input class = "button1" TYPE="BUTTON" VALUE="=" onClick="COUNT();"></td>
+<td ><input class = "button1" TYPE="BUTTON" VALUE="Сброс" onClick="C();"></td>
+<td><input class = "button1" type="hidden" name="hid1" value="0"></td>
+<td><input class = "button1" type="hidden" name="hid2" value="0"></td>
+</tr>
+</table>
+</form>
+</BODY>
+ </HTML>

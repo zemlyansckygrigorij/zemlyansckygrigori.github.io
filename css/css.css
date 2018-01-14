@@ -1,0 +1,150 @@
+body
+{ 
+background-color :#FFFACD;
+color: black ;
+font-family: arial;
+	color: #666666;
+	font-style: normal;
+	font-size: 14px;
+}
+.top_line{
+color: red ;
+width: 250px;
+left : 800px; 
+background: #FFFACD;
+padding: 5px;
+padding-right: 20px;  
+float: right;
+   }
+.header{
+text-align:center;
+color: red ;
+width: 650px;
+top:50px;
+left : 800px; 
+background:#FFFACD;
+padding: 5px;
+padding-right: 2px; 
+float: right;
+
+}
+#foto_main{
+width :100px;
+}
+font.title{
+font-family: arial;
+	color: red;
+	font-style: normal;
+	font-size: 16px; 
+	
+}
+
+.button1{
+  background: #3CB371;
+  border: 2px solid #556B2F;
+  height: 28px;
+  padding: 0 0 0 7px;
+  overflow: hidden;
+
+}
+.button1:hover {
+background: red;
+}
+
+h1 {
+
+	font-family: arial;
+	color: #444444;
+	font-style: normal;
+	font-size: 30px; 
+	
+}
+h2{
+	font-family: arial;
+	color: #444444;
+	font-style: normal;
+	font-size: 24px; 
+	
+}
+h3 {
+	font-family: arial;
+	color: #444444;
+	font-style: normal;
+	font-size: 20px; 
+	
+}
+h4{
+	font-family: arial;
+	color: #444444;
+	font-style: normal;
+	font-size: 16px; 
+	
+}
+h5 {
+	font-family: arial;
+	color: #444444;
+	font-style: normal;
+	font-size: 14px; 
+	
+}
+h6 {
+	font-family: arial;
+	color: #444444;
+	font-style: normal;
+	font-size: 12px; 
+	
+}
+.choose:hover {border:red 2px solid}
+ .choose{border:#FFFACD 2px solid}
+ 
+ 
+ /**/
+ #nav7, #nav7 ul, #nav7 li {
+  margin: 0;
+  padding: 0;
+}
+#nav7, #nav7 ul {
+  background: rgb(46,95,122);
+}
+#nav7 { /* подменю перемещается относительно меню */
+  position: relative;
+  display: table;
+  width: 100%;
+}
+#nav7 ul { /* подменю находится вне потока */
+  position: absolute;
+  z-index: 5;
+  display: none;
+}
+#nav7 li:hover ul { /* подменю будет показано, если курсор наведён на пункт меню с выпадающем списком */
+  display: block;
+}
+#nav7 li {
+  display: table-cell;
+  text-align: center;
+}
+#nav7 ul li {
+  display: block;
+  text-align: left;
+}
+#nav7 .right { /* последнее подменю будет расширяться справа налево */
+  direction: rtl;
+}
+#nav7 .right ul { /* для IE, решение найдено случайно, где связь ??? */
+  right: 0;
+}
+#nav7 .right li { /* последнее подменю будет расширяться справа налево, но не пункты последнего подменю */
+  direction: ltr;
+}
+#nav7 a {
+  display: block;
+  padding: 3px 0;
+  color: #fff;
+  text-decoration: none;
+}
+#nav7 ul a {
+  padding: 3px 15px;
+}
+#nav7 li:hover {
+  background: rgb(96,145,172);
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+  <head>
+    <title>Работа с картинками</title>
+    <script src="picture.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+  </head>
+  <body>
+  <ul id="nav7">
+  <li><a href="index.html">Главная страница</a>
+  <li><a href="#2">Работы</a>
+      <ul>
+        <li><a href="picture.html">Работа с картинками</a>
+        <li><a href="move_ball.html">Движущийся мяч</a>
+        <li><a href="calc.html">Калькулятор</a>
+      </ul>
+  <li><a href="#3">Контакты</a>
+      <ul>
+        <li><a href="#3-1">Телефон: 89514700303 </a>
+        <li><a href="#3-2">e-mail: palama2008@rambler.ru</a>
+      </ul>
+  <li class="right"><a href="inform_me.html">Обо мне</a>
+    
+</ul>
+  <!--input TYPE="BUTTON" VALUE="<<" onClick="backward();"-- >
+  <!--input TYPE="BUTTON" VALUE=">>" onClick="forward();" -->
+  <br>
+  <img id = "image0" class = "choose" src = "img/a.jpg" width = "100" onClick="image_insert(0);"  onmouseover ="border(image0);" title = "Ручей в лесу" onmousedown = "move(0);">
+  <img id = "image1" class = "choose" src = "img/e.jpg" width = "100" onClick="image_insert(1);" onmouseover ="border(image1);" title = "Лето" onmousedown = "move(1);">
+  <img id = "image2" class = "choose" src = "img/f.jpg" width = "100" onClick="image_insert(2);" onmouseover ="border(image2);" title = "Осень" onmousedown = "move(2);">
+  <img id = "image3" class = "choose" src = "img/q.jpg" width = "100" onClick="image_insert(3);" onmouseover ="border(image3);" title = "Поле" onmousedown = "move(3);">
+  <img id = "image4" class = "choose" src = "img/s.jpg" width = "100" onClick="image_insert(4);" onmouseover ="border(image4);"  title = "Луг" onmousedown = "move(4);">
+  <img id = "image5" class = "choose" src = "img/b.jpg" width = "100" onClick="image_insert(5);" onmouseover ="border(image5);"  title = "Осень в лесу" onmousedown = "move(5);">
+  <img id = "image6" class = "choose" src = "img/c.jpg" width = "100" onClick="image_insert(6);" onmouseover ="border(image6);"  title = "Скалы с водопадом" onmousedown = "move(6);">
+  <img id = "image7" class = "choose" src = "img/z.jpg" width = "100" onClick="image_insert(7);" onmouseover ="border(image7);"  title = "Поток воды в горах" onmousedown = "move(7);">
+  <img id = "image8" class = "choose" src = "img/x.jpg" width = "100" onClick="image_insert(8);" onmouseover ="border(image8);"  title = "Водопад в густом лесу" onmousedown = "move(8);">
+  <img id = "image9" class = "choose" src = "img/v.jpg" width = "100" onClick="image_insert(9);" onmouseover ="border(image9);"  title = "Ручей с водопадом" onmousedown = "move(9);">
+  <img id = "image10" class = "choose" src = "img/b.jpg" width = "100" onClick="image_insert(10);" onmouseover ="border(image10);"  title = "Осенний пейзаж с водопадом" onmousedown = "move(10);">
+   
+  <br>Выбор цвета
+  <select id = "select_color" onchange="color()"  name = "select_color" size = "1">
+  <option selected  value = "white">&#160;&#160;&#160;&#160;&#160;&#160; <!--белый-->
+  <option style = "background-color: #DCDCDC;" value = "#DCDCDC">&#160; <!--красный-->
+  <option style = "background-color: #FFDAB9;" value = "#FFDAB9">&#160; <!--черный-->
+  <option  style = "background-color: #FFFACD;" value = "#FFFACD"> &#160;<!--голубой-->
+  <option style = "background-color: #E6E6FA;" value = "#E6E6FA">&#160; <!--Зеленый-->
+  <option style = "background-color: #FFE4E1;" value = "#FFE4E1">&#160; <!--черный-->
+  <option  style = "background-color: #000000;" value = "#000000">&#160; <!--голубой-->
+  <option style = "background-color: #2F4F4F;" value = "#2F4F4F"> &#160;<!--красный-->
+  <option style = "background-color: #191970;" value = "#191970">&#160; <!--черный-->
+  <option  style = "background-color: #483D8B;" value = "#483D8B">&#160; <!--голубой-->
+  
+  
+  
+  <option style = "background-color: #5F9EA0;" value = "#5F9EA0">&#160; <!--красный-->
+  <option style = "background-color: #7FFFD4;" value = "#7FFFD4">&#160; <!--черный-->
+  <option  style = "background-color: #006400;" value = "#006400"> &#160;<!--голубой-->
+  <option style = "background-color: #556B2F;" value = "#556B2F">&#160; <!--Зеленый-->
+  <option style = "background-color: #20B2AA;" value = "#20B2AA">&#160; <!--черный-->
+  <option  style = "background-color: #98FB98;" value = "#98FB98">&#160; <!--голубой-->
+  <option style = "background-color: #7CFC00;" value = "#7CFC00"> &#160;<!--красный-->
+  <option style = "background-color: #32CD32;" value = "#32CD32">&#160; <!--черный-->
+  <option  style = "background-color: #8B4513;" value = "#8B4513">&#160; <!--голубой-->
+
+<input class = "button1" TYPE="BUTTON" VALUE="Добавить картинку" onClick="image_add();">
+<input class = "button1" TYPE="BUTTON" VALUE="Удалить картинку" onClick="image_remove();">
+
+<input class = "button1" TYPE="BUTTON" VALUE="Создать рамку картинки" onClick="border_color();">
+<input class = "button1" TYPE="BUTTON" VALUE="Сделать картинку фоновым изображением" onClick="background_image();">
+
+    <div id = "title" align= "center"><h1>Работа с картинками</h1></div>
+<div align= "center">
+<input class = "button1" TYPE="BUTTON" VALUE="<<" onClick="backward();"> 
+<input class = "button1" TYPE="BUTTON" VALUE=">>" onClick="forward();" ><br>
+
+</div>		
+<div id = "div_main_image" align= "center">
+
+<img id = "main_image" src = "img/a1.jpg"  width = "600" onClick="image_remove();"  onmouseover  ="border_color();" onmousewheel = "main_image_size();">
+	</div>
+	<ol>
+<li>Данная страница создана для учебных действий с картинками.	</li> 
+<li>При одиночном клике левой кнопкой мыши на центральную картинку она исчезает. </li> 
+<li>При наведении мыши на центральную картинку у нее появляется рамка с цветом выбранным из выпадающего списка в левом верхнем углу. </li> 
+<li>При прокручивании колесика мыши над центральной картинкой её размеры изменяются. </li> 
+<li>При при одиночном клике левой кнопкой мыши на любую из верхних картинок она занимает место центральной.</li> 
+<li>При наведении мыши на любую из верхних картинок у нее появляется красная граница.	</li>
+<li>При нажатии мыши на любую из верхних картинок данную картинку можно переместить в любое место страницы.	</li>
+<li>При нажатии кнопки "Добавить картинку" внизу добавляется картинка следующяя за данной (порядок картинок определяется при загрузке).	</li>
+<li>При нажатии кнопки "Удалить картинку" нижняя картинка удаляется.	</li>
+<li>При нажатии кнопки "Создать рамку картинки" у центральной картинки появляется рамка с цветом выбранным из выпадающего списка в левом верхнем углу. </li> 
+<li>При нажатии кнопки "Сделать картинку фоновым изображением" центральная картинка становится фоновым рисунком . </li> 
+<li>При нажатии кнопки &laquo; центральная картинка заменяется на предыдущюю (порядок картинок определяется при загрузке) . </li> 
+<li>При нажатии кнопки &raquo; центральная картинка заменяется на следующюю (порядок картинок определяется при загрузке) . </li> 
+	<ol>	
+ 
+	
+
+    </body>
+
+</html>
